@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Portfolio</title>
+  <meta name="description" content="Portfolio of an information systems student.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=IBM+Plex+Sans:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip" href="#projects">Skip to projects</a>
+
+  <header class="wrap hero">
+    <div class="hero-text">
+      <p id="role" class="role"></p>
+      <h1 id="name"></h1>
+      <p id="tagline" class="tagline"></p>
+      <p class="hero-links"><a class="btn" href="#projects">See my projects</a> <a class="btn ghost" href="#contact">Get in touch</a></p>
+    </div>
+    <figure class="hero-map">
+      <svg id="map" viewBox="0 0 600 420" role="group" aria-label="Skill areas. Select one to filter projects."></svg>
+      <figcaption>Select a skill area to filter my projects.</figcaption>
+    </figure>
+  </header>
+
+  <main class="wrap">
+    <section id="projects" class="sec">
+      <h2>Projects</h2>
+      <div>
+        <div id="chips" class="chips" role="group" aria-label="Filter projects"></div>
+        <p id="status" class="status" aria-live="polite"></p>
+        <div id="project-list"></div>
+      </div>
+    </section>
+
+    <section id="about" class="sec">
+      <h2>About</h2>
+      <div>
+        <div id="about-text" class="prose"></div>
+        <div id="skills" class="skills"></div>
+      </div>
+    </section>
+
+    <section id="timeline" class="sec">
+      <h2>Education and experience</h2>
+      <ol id="timeline-list" class="timeline"></ol>
+    </section>
+
+    <section id="contact" class="sec">
+      <h2>Contact</h2>
+      <div>
+        <p id="contact-text" class="prose"></p>
+        <p id="contact-links" class="contact-links"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap foot"><p id="foot"></p></footer>
+
+  <noscript><p class="wrap">This portfolio needs JavaScript to display its content.</p></noscript>
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
